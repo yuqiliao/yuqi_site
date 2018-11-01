@@ -1,0 +1,50 @@
+baseurl = "https://yuqiliao.github.io/"
+languageCode = "en-US"
+title = "Yuqi Liao"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = "UA-127483222-1"
+theme = "hugo-sustain"
+
+[permalinks]
+  post = "/:year/:month/:day/:slug"
+
+[params]
+  avatar = "profile.png"
+  author = "Yuqi Liao"
+  description = "This is Yuqi Liao's personal website"
+
+  # Custom assets can be linked with their paths relative to static/
+  custom_css = []
+  custom_js  = []
+
+[params.social]
+  Github        = "yuqiliao"
+  Email         = "yuqi.liao@georgetown.edu"
+  Twitter       = "YuqiLiao"
+  LinkedIn      = "yuqiliao"
+  #Stackoverflow = "username"
+  #Medium        = "username"
+  #Telegram      = "username"
+
+## Main Menu
+[[menu.main]]
+  name = "blog"
+  weight = 100
+  identifier = "blog"
+  url = "/blog/"
+[[menu.main]]
+  name = "projects (forthcoming)"
+  identifier = "projects"
+  weight = 200
+  url = "/projects/"
+[[menu.main]]
+  name = "CV"
+  identifier = "cv"
+  weight = 300
+  url = "/cv/"
+
+## YL: this is meant to make external links open in a new tab
+[blackfriday]
+  hrefTargetBlank = true
